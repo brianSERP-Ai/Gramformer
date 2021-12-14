@@ -37,9 +37,9 @@ class Gramformer:
         preds = self.correction_model.generate(
             input_ids,
             do_sample=True, 
-            max_length=128, 
+            max_length=500, 
             top_k=50, 
-            top_p=0.95, 
+            top_p=0.94, 
             early_stopping=True,
             num_return_sequences=max_candidates)
 
